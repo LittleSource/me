@@ -1,9 +1,10 @@
 import { NICKNAME } from '.';
+import { JUEJIN_PAGE } from './info'
 
 export const PATHS = {
   /** ************* SITE ****************** */
   SITE_HOME: '/',
-  SITE_BLOG: '/blog',
+  SITE_BLOG: JUEJIN_PAGE,
   SITE_SNIPPET: '/snippet',
   SITE_ABOUT: '/about',
   SITEMAP: '/sitemap.xml',

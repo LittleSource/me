@@ -7,7 +7,7 @@ import {
   TooltipTrigger,
 } from '@/components/ui/tooltip';
 
-import { NICKNAME, PATHS } from '@/constants';
+import { NICKNAME, PATHS, SLOGAN } from '@/constants';
 import { TypeIntro } from '@/features/home';
 import { cn } from '@/lib/utils';
 
@@ -59,7 +59,7 @@ export const HeroSection = () => {
         }}
       >
         喜欢
-        <span className={`font-semibold text-[#00d8ff]`}>React</span>、
+        <span className={`font-semibold text-[#42d392]`}>Vue</span>、
         <span className={`font-semibold text-[#007acc]`}>TypeScript</span>和
         <span className={`font-semibold text-[#00b4e0]`}>Golang</span>
         <span className="ml-4">\owo/ ~</span>
@@ -73,7 +73,7 @@ export const HeroSection = () => {
           animationDelay: `${getDelay()}ms`,
         }}
       >
-        我在这个网站记录我的成长，努力 💪 成为一个更好的程序员。
+        { SLOGAN }
       </p>
       <div
         className={cn('flex space-x-4', 'animate-fade-up animate-ease-in-out')}

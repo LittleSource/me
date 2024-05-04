@@ -12,15 +12,15 @@ import {
   PATHS,
   PATHS_MAP,
 } from '@/constants';
-import { getPV, getUV } from '@/features/statistics';
+//import { getPV, getUV } from '@/features/statistics';
 import { cn } from '@/lib/utils';
 import { formatNum } from '@/utils';
 
 import { buttonVariants } from '../ui/button';
 
 export const Footer = async () => {
-  const pv = await getPV();
-  const uv = await getUV();
+  // const pv = await getPV();
+  // const uv = await getUV();
 
   return (
     <footer className="w-full flex flex-col py-8 max-w-screen-xl mx-auto text-muted-foreground">
@@ -43,7 +43,7 @@ export const Footer = async () => {
             {PATHS_MAP[PATHS.SITEMAP]}
           </NextLink>
         </li>
-        <li>
+        {/* <li>
           <span className="mr-2">·</span>
           <span
             className={cn(
@@ -64,7 +64,7 @@ export const Footer = async () => {
           >
             UV：{formatNum(uv)}
           </span>
-        </li>
+        </li> */}
       </ul>
       <div className="w-full text-sm flex flex-col md:flex-row items-center justify-center space-y-1 md:space-y-0 md:space-x-2 ">
         <span>Copyringht &copy; {new Date().getFullYear()}</span>
@@ -79,7 +79,7 @@ export const Footer = async () => {
         >
           {BEI_AN_NUMBER}
         </NextLink>
-        <span className="hidden md:inline-block">·</span>
+        {/* <span className="hidden md:inline-block">·</span>
         <NextLink
           target="_blank"
           aria-label={GONG_AN_NUMBER}
@@ -94,7 +94,7 @@ export const Footer = async () => {
             className="mr-1 -translate-y-[1px]"
           />
           <span>{GONG_AN_NUMBER}</span>
-        </NextLink>
+        </NextLink> */}
       </div>
     </footer>
   );
